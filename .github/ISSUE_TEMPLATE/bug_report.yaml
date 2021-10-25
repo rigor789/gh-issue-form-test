@@ -23,6 +23,10 @@ body:
 
         Please confirm you are submitting a bug report and not a usage question.
 
+        **Code of Conduct**
+
+        By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/NativeScript/NativeScript/blob/master/tools/notes/CONTRIBUTING.md#coc)
+
         ---
   - type: checkboxes
     attributes:
@@ -30,6 +34,8 @@ body:
         - label: I have searched the existing issues as well as StackOverflow and this has not been posted before
           required: true
         - label: Yes, this is a bug report
+          required: true
+        - label: I agree to follow this project's Code of Conduct
           required: true
 
   - type: textarea
@@ -69,16 +75,6 @@ body:
       required: false
 
   - type: textarea
-    attributes:
-      label: Environment
-      description: |
-        Provide version numbers for the following components (information can be retrieved by running `ns info` in your project folder or by inspecting the `package.json` of the project):
-      placeholder: |
-        run ns env and paste the output here
-    validations:
-      required: false
-
-  - type: textarea
     id: logs
     attributes:
       label: Relevant log output
@@ -93,12 +89,12 @@ body:
     validations:
       required: false
 
-  - type: checkboxes
-    id: terms
+  - type: textarea
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/NativeScript/NativeScript/blob/master/tools/notes/CONTRIBUTING.md#coc)
-      options:
-        - label: I agree to follow this project's Code of Conduct
+      label: Environment
+      description: |
+        Provide version numbers for the following components (information can be retrieved by running `ns info` in your project folder or by inspecting the `package.json` of the project):
+      placeholder: |
+        run ns env and paste the output here
     validations:
-      required: true
+      required: false
