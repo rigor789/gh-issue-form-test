@@ -7,15 +7,13 @@ body:
     value: |
       Thanks for taking the time to fill out this bug report! If you have usage questions, please use [Discussions](https://github.com/NativeScript/NativeScript/discussions).
 
-      Before you continue filling out this form, please check the following:
-      * Is there an existing issue for this?
-      * Confirm you are submitting a bug report.
+      Before you continue filling out this form, please confirm the following:
 
-      # Is there an existing issue for this?
+      ## Is there an existing issue for this?
 
       Please search to see if an issue already exists for the bug you encountered or is not already reported in StackOverflow as a question...
 
-      # Confirm you are submitting a bug report
+      ## Confirm you are submitting a bug report
 
       Please confirm you are submitting a bug report and not a usage question. For usage questions, please use [Discussions](https://github.com/NativeScript/NativeScript/discussions).
 - type: checkboxes
