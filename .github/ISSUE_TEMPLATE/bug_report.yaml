@@ -15,15 +15,15 @@ body:
 
         Before you continue filling out this form, please confirm the following:
 
-        **Is there an existing issue for this?**
+        **1. Is there an existing issue for this?**
 
         Please search to see if an issue already exists for the bug you encountered or is not already reported in [StackOverflow](https://stackoverflow.com/questions/tagged/nativescript) as a question.
 
-        **Confirm you are submitting a bug report**
+        **2. Confirm you are submitting a bug report**
 
         Please confirm you are submitting a bug report and not a usage question.
 
-        **Code of Conduct**
+        **3. Code of Conduct**
 
         By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/NativeScript/NativeScript/blob/master/tools/notes/CONTRIBUTING.md#coc)
 
@@ -31,11 +31,11 @@ body:
   - type: checkboxes
     attributes:
       options:
-        - label: I have searched the existing issues as well as StackOverflow and this has not been posted before
+        - label: 1. I have searched the existing issues as well as StackOverflow and this has not been posted before
           required: true
-        - label: Yes, this is a bug report
+        - label: 2. Yes, this is a bug report
           required: true
-        - label: I agree to follow this project's Code of Conduct
+        - label: 3. I agree to follow this project's Code of Conduct
           required: true
 
   - type: textarea
@@ -46,6 +46,7 @@ body:
         Please, explain whether it's a build time error or a runtime error.
       placeholder: |
         When I do <X>, <Y> happens and I see the following error message:
+
         ```
         <error message>
         ```
@@ -63,38 +64,29 @@ body:
 
   - type: textarea
     attributes:
-      label: Steps To Reproduce
-      description: Add commands used or steps taken to reproduce the behaviour.
+      label: Steps To Reproduce and additional context
+      description: |
+        Add commands used or steps taken to reproduce the behaviour.
+        Include links, references or anything else that will give us more context about the issue you are encountering.
       placeholder: |
         1. Go to '...'
-        2. Click on '....'
-        3. Scroll down to '....'
+        2. Click on '...'
+        3. Scroll down to '...'
         4. See error
-      render: markdown
     validations:
       required: false
 
   - type: textarea
-    id: logs
     attributes:
-      label: Relevant log output
+      label: Relevant log output (if applicable)
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
 
   - type: textarea
     attributes:
-      label: Anything else?
-      description: |
-        Links? References? Anything that will give us more context about the issue you are encountering!
-    validations:
-      required: false
-
-  - type: textarea
-    attributes:
       label: Environment
       description: |
-        Provide version numbers for the following components (information can be retrieved by running `ns info` in your project folder or by inspecting the `package.json` of the project):
-      placeholder: |
-        run ns env and paste the output here
+        Provide information about your environment.
+        Run ns info inside the project and paste the output directly without manual formatting:
     validations:
       required: false
