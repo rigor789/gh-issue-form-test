@@ -1,6 +1,6 @@
 name: 🐞 Bug report
 description: Create a bug report to help us improve NativeScript
-labels: [bug]
+labels: [bug-pending-triage]
 body:
   - type: markdown
     attributes:
@@ -11,9 +11,9 @@ body:
 
         For usage questions, please refer to the following resources:
         * Search the [docs](https://docs.nativescript.org/)
-        * Search or ask on [StackOverflow](https://stackoverflow.com/questions/tagged/nativescript)
-        * Search or ask in [Discussions](https://github.com/NativeScript/NativeScript/discussions)
         * Search or ask in [Discord](https://nativescript.org/discord)
+        * Search or ask in [Discussions](https://github.com/NativeScript/NativeScript/discussions)
+        * Search or ask on [StackOverflow](https://stackoverflow.com/questions/tagged/nativescript)
         * Watch [video tutorials](https://nativescripting.com/)
 
         Before you continue filling out this form, please confirm the following:
