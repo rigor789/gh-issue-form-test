@@ -6,21 +6,26 @@ body:
   attributes:
     value: |
       Thanks for taking the time to fill out this bug report! If you have usage questions, please use [Discussions](https://github.com/NativeScript/NativeScript/discussions).
+
+      Before you continue filling out this form, please check the following:
+      * Is there an existing issue for this?
+      * Confirm you are submitting a bug report.
+
+      # Is there an existing issue for this?
+
+      Please search to see if an issue already exists for the bug you encountered or is not already reported in StackOverflow as a question...
+
+      # Confirm you are submitting a bug report
+
+      Please confirm you are submitting a bug report and not a usage question. For usage questions, please use [Discussions](https://github.com/NativeScript/NativeScript/discussions).
 - type: checkboxes
   attributes:
-    label: Is there an existing issue for this?
-    description: Please search to see if an issue already exists for the bug you encountered or is not already reported in StackOverflow as a question..
     options:
     - label: I have searched the existing issues as well as StackOverflow and this has not been posted before
       required: true
-- type: checkboxes
-  id: terms_issues
-  attributes:
-    label: Confirm you are submitting a bug report.
-    description: Please confirm you are submitting a bug report and not a usage question. For usage questions, please use [Discussions](https://github.com/NativeScript/NativeScript/discussions).
-    options:
-      - label: Yes, this is a bug report
-        required: true
+    - label: Yes, this is a bug report
+      required: true
+
 - type: textarea
   attributes:
     label: Current Behavior
@@ -29,7 +34,9 @@ body:
       Please, explain whether it's a build time error or a runtime error. 
     placeholder: |
       When I do <X>, <Y> happens and I see the error message attached below:
-      ```...```
+      ```
+      ...
+      ```
   validations:
     required: false
 - type: textarea
