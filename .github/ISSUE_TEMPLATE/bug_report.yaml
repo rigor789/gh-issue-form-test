@@ -5,7 +5,7 @@ body:
 - type: markdown
   attributes:
     value: |
-      The issue list is reserved exclusively for bug reports and feature requests. That means we do not accept usage questions. If you open an issue that does not conform to the requirements, it will be closed.
+      **:rotating_light: The issue list is reserved exclusively for bug reports and feature requests. That means we do not accept usage questions. If you open an issue that does not conform to the requirements, it will be closed.**
 
       For usage questions, please refer to the following resources:
       * Search the [docs]()
@@ -22,6 +22,8 @@ body:
       **Confirm you are submitting a bug report**
 
       Please confirm you are submitting a bug report and not a usage question.
+
+      ---
 - type: checkboxes
   attributes:
     options:
