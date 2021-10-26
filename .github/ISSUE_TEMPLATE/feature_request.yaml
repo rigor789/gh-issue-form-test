@@ -11,6 +11,13 @@ body:
         > ## Important! :warning:
         > 
         > The issue list is reserved exclusively for bug reports and feature requests. That means we do not accept usage questions. If you open an issue that does not conform to the requirements, it will be closed.
+        >
+        > For usage questions, please refer to the following resources:
+        > * Search the [docs](https://docs.nativescript.org/)
+        > * Search or ask in [Discord](https://nativescript.org/discord)
+        > * Search or ask in [Discussions](https://github.com/NativeScript/NativeScript/discussions)
+        > * Search or ask on [StackOverflow](https://stackoverflow.com/questions/tagged/nativescript)
+        > * Watch [video tutorials](https://nativescripting.com/)
 
   - type: textarea
     attributes:
