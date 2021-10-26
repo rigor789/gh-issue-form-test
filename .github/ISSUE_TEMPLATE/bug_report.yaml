@@ -89,11 +89,16 @@ body:
     attributes:
       label: Environment
       description: |
-        Provide information about your environment.
-        Run `npx nativescript-envinfo -y` inside the project and paste the output directly without manual formatting:
+        Provide information about your environment. Run
+
+        ```shell
+        npx nativescript-envinfo -y
+        ```
+        
+        inside the project and paste the output directly without manual formatting.
       placeholder: |
         Paste the result of
-        
+
           npx nativescript-envinfo -y
     validations:
       required: false
