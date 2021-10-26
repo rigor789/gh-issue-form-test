@@ -1,8 +1,8 @@
 name: 🚀 Feature request
 description: Suggest an idea for NativeScript
 labels: ['enhacement-pending-triage'] 
-body:
 
+body:
 - type: markdown
   attributes:
     value: |
