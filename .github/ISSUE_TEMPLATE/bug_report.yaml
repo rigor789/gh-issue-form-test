@@ -8,6 +8,8 @@ body:
         Thanks for taking the time to report an issue.
 
   - type: textarea
+    validations:
+      required: true
     attributes:
       label: Issue Description
       description: |
