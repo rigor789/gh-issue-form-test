@@ -9,10 +9,12 @@ body:
 
   - type: textarea
     attributes:
-      label: Current Behavior
+      label: Issue Description
       description: |
-        A clear and concise description of what the bug is. 
-        Please, explain whether it's a build time error or a runtime error.
+        A clear and concise description of what the bug is.
+        Please, explain whether it's a build-time error or a runtime error.
+
+        If you intend to submit a PR for this issue, tell us in the description.
       placeholder: |
         When I do <X>, <Y> happens and I see the following error message:
 
@@ -20,29 +22,30 @@ body:
         <error message>
         ```
 
-  - type: textarea
-    attributes:
-      label: Expected Behavior
-      description: A concise description of what you expected to happen.
-      placeholder: |
+        Expected behavior:
+
         When I do <X>, <Z> should happen instead.
 
   - type: textarea
     attributes:
-      label: Steps To Reproduce and additional context
+      label: Reproduction
       description: |
         Add commands used or steps taken to reproduce the behaviour.
         Include links, references or anything else that will give us more context about the issue you are encountering.
       placeholder: |
-        1. Go to '...'
+        e.g: 
+        https://github.com/NativeScript/Nativescript
+
+        1. clone, and run with `ns run ios`
         2. Click on '...'
-        3. Scroll down to '...'
-        4. See error
+        3. See error
 
   - type: textarea
     attributes:
       label: Relevant log output (if applicable)
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      description: |
+        Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+        Often times using the `--log trace` flag will yield more verbose logs that will help identify the issue quicker. When pasting verbose logs, please make sure you remove any sensitive information.
       render: shell
 
   - type: textarea
@@ -77,7 +80,7 @@ body:
         * Search or ask on [StackOverflow](https://stackoverflow.com/questions/tagged/nativescript)
         * Watch [video tutorials](https://nativescripting.com/)
 
-        Before you continue filling out this form, please confirm the following:
+        Before you submit this issue, please confirm the following:
 
         **1. Is there an existing issue for this?**
 
