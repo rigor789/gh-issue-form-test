@@ -90,6 +90,6 @@ body:
       label: Environment
       description: |
         Provide information about your environment.
-        Run ns info inside the project and paste the output directly without manual formatting:
+        Run `npx nativescript-envinfo -y` inside the project and paste the output directly without manual formatting:
     validations:
       required: false
