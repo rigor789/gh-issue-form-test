@@ -2,6 +2,60 @@ name: 🐞 Bug report
 description: Create a bug report to help us improve NativeScript
 labels: [bug-pending-triage]
 body:
+  - type: textarea
+    attributes:
+      label: Current Behavior
+      description: |
+        A clear and concise description of what the bug is. 
+        Please, explain whether it's a build time error or a runtime error.
+      placeholder: |
+        When I do <X>, <Y> happens and I see the following error message:
+
+        ```
+        <error message>
+        ```
+
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: A concise description of what you expected to happen.
+      placeholder: |
+        When I do <X>, <Z> should happen instead.
+
+  - type: textarea
+    attributes:
+      label: Steps To Reproduce and additional context
+      description: |
+        Add commands used or steps taken to reproduce the behaviour.
+        Include links, references or anything else that will give us more context about the issue you are encountering.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+
+  - type: textarea
+    attributes:
+      label: Relevant log output (if applicable)
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+
+  - type: textarea
+    attributes:
+      label: Environment
+      description: |
+        Provide information about your environment. Run
+
+        ```shell
+        npx nativescript-envinfo -y
+        ```
+
+        inside the project and paste the output directly without manual formatting.
+      placeholder: |
+        Paste the result of
+
+          npx nativescript-envinfo -y
+
   - type: markdown
     attributes:
       value: |
@@ -20,7 +74,7 @@ body:
 
         **1. Is there an existing issue for this?**
 
-        Please search to see if an issue already exists for the bug you encountered or is not already reported in [StackOverflow](https://stackoverflow.com/questions/tagged/nativescript) as a question.
+        Please search to see if an issue already exists for the bug you encountered or is not already reported on [StackOverflow](https://stackoverflow.com/questions/tagged/nativescript) as a question.
 
         **2. Confirm you are submitting a bug report**
 
@@ -32,6 +86,7 @@ body:
 
         ---
   - type: checkboxes
+    id: terms
     attributes:
       options:
         - label: I have searched the existing issues as well as StackOverflow and this has not been posted before
@@ -40,65 +95,3 @@ body:
           required: true
         - label: I agree to follow this project's Code of Conduct
           required: true
-
-  - type: textarea
-    attributes:
-      label: Current Behavior
-      description: |
-        A clear and concise description of what the bug is. 
-        Please, explain whether it's a build time error or a runtime error.
-      placeholder: |
-        When I do <X>, <Y> happens and I see the following error message:
-
-        ```
-        <error message>
-        ```
-    validations:
-      required: false
-
-  - type: textarea
-    attributes:
-      label: Expected Behavior
-      description: A concise description of what you expected to happen.
-      placeholder: |
-        When I do <X>, <Z> should happen instead.
-    validations:
-      required: false
-
-  - type: textarea
-    attributes:
-      label: Steps To Reproduce and additional context
-      description: |
-        Add commands used or steps taken to reproduce the behaviour.
-        Include links, references or anything else that will give us more context about the issue you are encountering.
-      placeholder: |
-        1. Go to '...'
-        2. Click on '...'
-        3. Scroll down to '...'
-        4. See error
-    validations:
-      required: false
-
-  - type: textarea
-    attributes:
-      label: Relevant log output (if applicable)
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-
-  - type: textarea
-    attributes:
-      label: Environment
-      description: |
-        Provide information about your environment. Run
-
-        ```shell
-        npx nativescript-envinfo -y
-        ```
-        
-        inside the project and paste the output directly without manual formatting.
-      placeholder: |
-        Paste the result of
-
-          npx nativescript-envinfo -y
-    validations:
-      required: false
