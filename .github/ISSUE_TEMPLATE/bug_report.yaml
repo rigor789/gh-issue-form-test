@@ -2,6 +2,11 @@ name: 🐞 Bug report
 description: Create a bug report to help us improve NativeScript
 labels: [bug-pending-triage]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an issue.
+
   - type: textarea
     attributes:
       label: Current Behavior
@@ -59,6 +64,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        ---
+
         > ## Important! :warning:
         > 
         > The issue list is reserved exclusively for bug reports and feature requests. That means we do not accept usage questions. If you open an issue that does not conform to the requirements, it will be closed.
@@ -86,12 +93,11 @@ body:
 
         ---
   - type: checkboxes
-    id: terms
     attributes:
       options:
-        - label: I have searched the existing issues as well as StackOverflow and this has not been posted before
+        - label: I have searched the [existing issues](https://github.com/NativeScript/NativeScript/issues) as well as [StackOverflow](https://stackoverflow.com/questions/tagged/nativescript) and this has not been posted before
           required: true
         - label: Yes, this is a bug report
           required: true
-        - label: I agree to follow this project's Code of Conduct
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/NativeScript/NativeScript/blob/master/tools/notes/CONTRIBUTING.md#coc)
           required: true
