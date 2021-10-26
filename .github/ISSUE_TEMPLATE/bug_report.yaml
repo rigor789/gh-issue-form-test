@@ -45,7 +45,10 @@ body:
       label: Relevant log output (if applicable)
       description: |
         Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-        Often times using the `--log trace` flag will yield more verbose logs that will help identify the issue quicker. When pasting verbose logs, please make sure you remove any sensitive information.
+        
+        Using the `--log trace` flag will usuall print more verbose logs that will help identify the issue quicker.
+        
+        When pasting verbose logs, please make sure you remove any sensitive information.
       render: shell
 
   - type: textarea
